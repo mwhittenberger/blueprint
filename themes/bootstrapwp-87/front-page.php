@@ -34,28 +34,28 @@ get_header(); ?>
 				<div class="triangle"></div>
 				<h2>Services</h2>
 
-				<div class="col-md-3 no-pad">
-					<div style="background: url('wp-content/themes/bootstrapwp-87/img/front-brokers-bg.jpg') no-repeat">
+				<div class="col-md-3 col-sm-6 no-pad">
+					<div style="background-position-x: 100% !important; background: url('wp-content/themes/bootstrapwp-87/img/front-brokers-bg.jpg') no-repeat">
 						Brokers/Dealers<br>
-						<a href="#"><button>Learn More</button></a>
+						<a href="/broker-dealer/"><button>Learn More</button></a>
 					</div>
 				</div>
-				<div class="col-md-3 no-pad">
+				<div class="col-md-3 col-sm-6 no-pad">
 					<div style="background: url('wp-content/themes/bootstrapwp-87/img/front-futures-bg.jpg') no-repeat">
 						Futures & Commodities<br>
-						<a href="#"><button>Learn More</button></a>
+						<a href="/futures-and-commodities/"><button>Learn More</button></a>
 					</div>
 				</div>
-				<div class="col-md-3 no-pad">
-					<div style="background: url('wp-content/themes/bootstrapwp-87/img/front-private-bg.jpg') no-repeat">
+				<div class="col-md-3 col-sm-6 no-pad">
+					<div style="background-position-x: 100% !important; background: url('wp-content/themes/bootstrapwp-87/img/front-private-bg.jpg') no-repeat">
 						Private Funds<br>
-						<a href="#"><button>Learn More</button></a>
+						<a href="/hedge-funds/"><button>Learn More</button></a>
 					</div>
 				</div>
-				<div class="col-md-3 no-pad">
+				<div class="col-md-3 col-sm-6 no-pad">
 					<div style="background: url('wp-content/themes/bootstrapwp-87/img/front-investment-bg.jpg') no-repeat">
 						Investment Advisors<br>
-						<a href="#"><button>Learn More</button></a>
+						<a href="/investment-advisors/"><button>Learn More</button></a>
 					</div>
 				</div>
 

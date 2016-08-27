@@ -408,6 +408,7 @@ footer .thinner {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 60px;
 }
 
 #front-services {
@@ -418,6 +419,7 @@ footer .thinner {
     text-align: center;
     position: relative;
     padding: 60px 0 80px;
+    margin-bottom: 5px;
 }
 
 #front-services button {
@@ -431,4 +433,13 @@ footer .thinner {
 
 #front-services .no-pad div {
     padding: 108px 0;
+}
+
+@media (max-width: 767px) {
+    #front-services .no-pad div {
+        margin: 0 auto;
+        display: block;
+        max-width: 400px;
+        background-size: cover !important;
+    }
 }
