@@ -62,7 +62,23 @@ get_header(); ?>
 			</div> </div>
 	</section>
 
+	<section id="front-testimonials">
+		<div class="container"><div class="row">
+			<?php echo do_shortcode('[KentoTestimonial]'); ?>
+		</div></div>
+	</section>
 
+	<section id="front-regulatory">
+		<div class="container"><div class="row">
+				<h2>Regulatory Updates</h2>
+
+				<div id="regulatory-box">
+					<div id="rb-image"></div>
+					<div id="rb-text"></div>
+				</div>
+
+			</div> </div>
+	</section>
 
 
 

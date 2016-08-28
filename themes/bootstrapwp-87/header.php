@@ -73,7 +73,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-            <img src="wp-content/themes/bootstrapwp-87/img/logo.png" id="logo">
+            <img src="/wp-content/themes/bootstrapwp-87/img/logo.png" id="logo">
           </a>
           <?php
            /** Loading WordPress Custom Menu with Fallback to wp_list_pages **/

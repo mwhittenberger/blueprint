@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 hidden-sm hidden-xs">
-				<img src="wp-content/themes/bootstrapwp-87/img/footer-logo.png" class="img-responsive" id="footer-logo">
+				<img src="/wp-content/themes/bootstrapwp-87/img/footer-logo.png" class="img-responsive" id="footer-logo">
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-6 footer-divs">
 				<p>

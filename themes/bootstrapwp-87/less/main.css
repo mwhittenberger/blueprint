@@ -391,10 +391,11 @@ footer .thinner {
     margin-left: -30px;
 }
 
-#front-company h2 {
+#front-company h2, #front-regulatory h2 {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
+    color: #88888a;
 }
 
 #front-company button {
@@ -435,11 +436,99 @@ footer .thinner {
     padding: 108px 0;
 }
 
+#front-testimonials {
+    min-height: 1160px;
+    height: auto;
+    background-image: url("/wp-content/themes/bootstrapwp-87/img/front-testimonial-bg.jpg");
+    padding-top: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+#front-testimonials .kento-testimonial {
+    padding: 0 10px;
+}
+
+#front-testimonials .kento-testimonial-author-comments {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 69px;
+    text-align: center;
+    color: #e2d8b9;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.68);
+    background: none;
+    padding-left: 0;
+    font-style: normal;
+
+}
+
+#front-testimonials .kento-testimonial-author-name {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    color: #e2d8b9;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.68);
+}
+
+
+#front-testimonials .kento-testimonial-author-img {
+    display:none;
+}
+
+#front-regulatory {
+    min-height: 825px;
+    height: auto;
+    background-image: url("/wp-content/themes/bootstrapwp-87/img/front-regulatory-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    text-align: center;
+}
+
+#front-regulatory #regulatory-box {
+    width:100%;
+    margin:40px auto;
+    border: #918f90 solid 1px;
+    border-radius: 6px;
+    min-height: 520px;
+    overflow: hidden;
+    background: #fff;
+}
+
+#front-regulatory #regulatory-box #rb-image {
+    width:30%;
+    height:520px;
+    float: left;
+    background-image: url("/wp-content/themes/bootstrapwp-87/img/regulatory-box.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+#front-regulatory #regulatory-box #rb-text {
+    overflow-y: scroll;
+}
+
 @media (max-width: 767px) {
     #front-services .no-pad div {
         margin: 0 auto;
         display: block;
         max-width: 400px;
         background-size: cover !important;
+    }
+}
+
+@media (max-width: 475px) {
+    #front-testimonials {
+        background-position-x: 65%;
+    }
+    #front-testimonials .kento-testimonial-author-comments {
+        font-size: 46px;
+        line-height: 55px;
     }
 }
