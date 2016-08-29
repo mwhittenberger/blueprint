@@ -20,8 +20,12 @@ body {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-}
 
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
 
 /* Header Styles */
 
@@ -223,6 +227,10 @@ body {
 }
 
 @media (max-width: 979px) {
+    .navbar .nav > li > a:hover {
+        color: #6e6b6b;
+    }
+
     .nav-collapse.collapse {
         overflow: hidden;
         height: 0px;
@@ -391,7 +399,7 @@ footer .thinner {
     margin-left: -30px;
 }
 
-#front-company h2, #front-regulatory h2 {
+#front-company h2, #front-regulatory h2, #front-contact h2 {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -402,6 +410,8 @@ footer .thinner {
     text-transform: uppercase;
     font-weight: bold;
     color: #6e6b6b;
+    padding-top: 7px;
+    border-radius: 0;
 }
 
 #front-services h2 {
@@ -419,7 +429,7 @@ footer .thinner {
     font-weight: bold;
     text-align: center;
     position: relative;
-    padding: 60px 0 80px;
+    padding: 60px 0 155px;
     margin-bottom: 5px;
 }
 
@@ -430,6 +440,7 @@ footer .thinner {
     font-weight: 300;
     text-transform: uppercase;
     border: none;
+    margin-top: 10px;
 }
 
 #front-services .no-pad div {
@@ -485,8 +496,9 @@ footer .thinner {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: center;
     text-align: center;
+    background-attachment: fixed;
 }
 
 #front-regulatory #regulatory-box {
@@ -512,14 +524,164 @@ footer .thinner {
 
 #front-regulatory #regulatory-box #rb-text {
     overflow-y: scroll;
+    float: left;
+}
+
+#front-contact {
+    text-align: center;
+    font-size: 27px;
+    color: #88888a;
+    font-weight: 500;
+}
+
+#front-contact p {
+    max-width: 765px;
+    margin: 30px auto;
+}
+
+#front-contact .gfield_label, #front-contact .gfield_description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #918f90;
+}
+
+#front-contact #field_1_7 {
+    width: 50%;
+}
+
+#front-contact #field_1_8 {
+    width: 40%;
+    float: left;
+    margin-top: -15px;
+}
+
+#front-contact #field_1_9 {
+    width: 40%;
+    float: right;
+    margin-top: -434px;
+}
+
+#front-contact #field_1_10 {
+    width: 40%;
+    float: right;
+    margin-top: -163px;
+}
+
+#front-contact #field_1_7 .gfield_label, #front-contact #field_1_9 .gfield_label {
+    font-weight: bold;
+}
+
+#front-contact #field_1_1 .gfield_label, #front-contact #field_1_2 .gfield_label, #front-contact #field_1_3 .gfield_label, #front-contact #field_1_4 .gfield_label, #front-contact #field_1_5 .gfield_label {
+    float: left;
+    width: 105px;
+}
+
+#front-contact #field_1_1 .ginput_container, #front-contact #field_1_2 .ginput_container, #front-contact #field_1_3 .ginput_container, #front-contact #field_1_4 .ginput_container, #front-contact #field_1_5 .ginput_container {
+    float: left;
+    width: 80%;
+}
+
+#front-contact #field_1_1 .ginput_container input, #front-contact #field_1_2 .ginput_container input, #front-contact #field_1_3 .ginput_container input, #front-contact #field_1_4 .ginput_container input, #front-contact #field_1_5 .ginput_container input {
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+#front-contact .gform_wrapper .gfield_required {
+    color: red;
+    margin-left: 0;
+    float: left;
+}
+
+#front-contact .gform_body {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#front-contact .gform_body textarea {
+    height: 100px;
+}
+
+#front-contact #gform_submit_button_1 {
+    display: none;
+    background-color: #4f91cd;
+    background-image: none;
+    text-transform: uppercase;
+    margin: 60px auto 30px;
+    width: 97px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#front-contact .gform_wrapper .validation_message {
+    font-size: 14px;
+}
+
+#front-contact #gform_submit_button_1_1 {
+    background-color: #4f91cd;
+    background-image: none;
+    text-transform: uppercase;
+    margin: 60px auto 30px;
+    width: 97px;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    #front-contact p {
+        max-width: 630px;
+        margin: 30px auto;
+    }
 }
 
 @media (max-width: 767px) {
+    #front-regulatory #regulatory-box #rb-image {
+        width: 0;
+    }
+
     #front-services .no-pad div {
         margin: 0 auto;
         display: block;
         max-width: 400px;
         background-size: cover !important;
+    }
+
+    #front-contact #field_1_1 .ginput_container, #front-contact #field_1_2 .ginput_container, #front-contact #field_1_3 .ginput_container, #front-contact #field_1_4 .ginput_container, #front-contact #field_1_5 .ginput_container {
+        float: left;
+        width: 95%;
+    }
+
+    #front-contact #field_1_7 {
+        width: 100%;
+    }
+
+    #front-contact #field_1_8 {
+        width: 100%;
+        float: none;
+        margin-top: -15px;
+    }
+
+    #front-contact #field_1_9 {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
+
+    #front-contact #field_1_10 {
+        width: 100%;
+        float: none;
+        margin-top: -15px;
+    }
+
+    #front-contact #gform_submit_button_1 {
+        display: block;
+        margin: 10px auto 30px;
+    }
+
+    #front-contact #gform_submit_button_1_1 {
+        display: none;
     }
 }
 

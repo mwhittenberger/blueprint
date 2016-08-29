@@ -80,6 +80,20 @@ get_header(); ?>
 			</div> </div>
 	</section>
 
+	<section id="front-contact">
+		<div class="container"><div class="row">
+				<h2>Contact Us</h2>
+				<p>
+					Please complete this form to find out how BRC’s customized compliance solutions and services can help you.
+					<br>Fields marked with <span style="color:red;">*</span> are required.
+				</p>
+
+				<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
+
+
+			</div> </div>
+	</section>
+
 
 
 
