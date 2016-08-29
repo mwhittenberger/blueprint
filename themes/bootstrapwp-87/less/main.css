@@ -8,11 +8,17 @@ body {
 }
 
 #content-wrapper {
-    padding: 5px 0 0;
+    padding: 0;
 }
 
 .no-pad {
     padding: 0;
+}
+
+@media (max-width: 979px) {
+    .navbar-fixed-top {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -694,3 +700,44 @@ footer .thinner {
         line-height: 55px;
     }
 }
+
+/* Common Innerpage styles */
+
+.page .jumbotron {
+    min-height: 398px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+.page .jumbotron .row {
+    min-height: 398px;
+    position: relative;
+}
+
+.page .primary-copy {
+    font-size: 18px;
+    color: #636363;
+    font-weight: 200;
+    line-height: 27px;
+}
+
+.page .primary-copy li {
+    margin-bottom: 7px;
+}
+
+.page h1 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.page #after-copy {
+    margin: 40px 0;
+}
+
+

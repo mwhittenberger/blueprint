@@ -12,28 +12,26 @@
 
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-  <div class="row">
-  <div class="container">
-   <?php if (function_exists('bootstrapwp_breadcrumbs')) bootstrapwp_breadcrumbs(); ?>
-   </div><!--/.container -->
-   </div><!--/.row -->
-   <div class="container">
 
-      
  <!-- Masthead
       ================================================== -->
-      <header class="jumbotron subhead" id="overview">
-        <h1><?php the_title();?></h1>
+      <header class="jumbotron subhead" id="overview" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
+        <div class="container"><div class="row">
+			<h1 style="color:<?php the_field('title_color'); ?>"><?php the_title();?></h1>
+        </div></div>
       </header>
-         
-        <div class="row content">
-<div class="span8">
 
-            <?php the_content();?>
+		<div class="container"><div class="row">
+
+			<div class="col-md-offset-1 col-md-10 primary-copy">
+				<?php the_content();?>
+				<img src="/wp-content/themes/bootstrapwp-87/img/inner-page-copy-footer.jpg" id="after-copy" class="img-responsive">
+			</div>
+
+		</div></div>
+
+
 <?php endwhile; // end of the loop. ?>
-          </div><!-- /.span8 -->
-          
-          <?php get_sidebar(); ?>
 
 
 <?php get_footer(); ?>
