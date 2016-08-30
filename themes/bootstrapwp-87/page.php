@@ -26,6 +26,8 @@ get_header(); ?>
 			<div class="col-md-offset-1 col-md-10 primary-copy">
 				<?php the_content();?>
 				<img src="/wp-content/themes/bootstrapwp-87/img/inner-page-copy-footer.jpg" id="after-copy" class="img-responsive">
+
+				<?php the_field('additional_content'); ?>
 			</div>
 
 		</div></div>

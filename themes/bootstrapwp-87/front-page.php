@@ -35,29 +35,45 @@ get_header(); ?>
 				<h2>Services</h2>
 
 				<div class="col-md-3 col-sm-6 no-pad">
-					<div style="background-position-x: 100% !important; background: url('wp-content/themes/bootstrapwp-87/img/front-brokers-bg.jpg') no-repeat">
+					<div class="black-overlay">
 						Brokers/Dealers<br>
 						<a href="/broker-dealer/"><button>Learn More</button></a>
 					</div>
+					<div class="details" style="background-position-x: 100% !important; background: url('wp-content/themes/bootstrapwp-87/img/front-brokers-bg.jpg') no-repeat"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 no-pad">
-					<div style="background: url('wp-content/themes/bootstrapwp-87/img/front-futures-bg.jpg') no-repeat">
+					<div class="black-overlay">
 						Futures & Commodities<br>
 						<a href="/futures-and-commodities/"><button>Learn More</button></a>
 					</div>
+						<div class="details" style="background: url('wp-content/themes/bootstrapwp-87/img/front-futures-bg.jpg') no-repeat"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 no-pad">
-					<div style="background-position-x: 100% !important; background: url('wp-content/themes/bootstrapwp-87/img/front-private-bg.jpg') no-repeat">
+					<div class="black-overlay">
 						Private Funds<br>
 						<a href="/hedge-funds/"><button>Learn More</button></a>
 					</div>
+					<div class="details" style="background-position-x: 100% !important; background: url('wp-content/themes/bootstrapwp-87/img/front-private-bg.jpg') no-repeat"></div>
 				</div>
 				<div class="col-md-3 col-sm-6 no-pad">
-					<div style="background: url('wp-content/themes/bootstrapwp-87/img/front-investment-bg.jpg') no-repeat">
+					<div class="black-overlay">
 						Investment Advisors<br>
 						<a href="/investment-advisors/"><button>Learn More</button></a>
 					</div>
+					<div class="details" style="background: url('wp-content/themes/bootstrapwp-87/img/front-investment-bg.jpg') no-repeat"></div>
 				</div>
+				<script>
+					jQuery('.no-pad').hover(
+						function() {
+							//alert("!");
+							//jQuery( this ).fadeOut( 100 );
+							jQuery( this ).find('.black-overlay').fadeIn( 300 );
+						},
+						function() {
+							jQuery( this ).find('.black-overlay').fadeOut( 700 );
+						}
+					);
+				</script>
 
 			</div> </div>
 	</section>

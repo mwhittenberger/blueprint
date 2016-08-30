@@ -46,7 +46,7 @@
   </head>
   <body <?php body_class(); ?>  data-spy="scroll" data-target=".subnav" data-offset="50">
 
-  <header class="navbar-fixed-top site-header">
+  <header class="navbar-fixed-top site-header" id="the-header">
 	<div id="tiptop">
 		<div class="container">
 			<div class="row">
