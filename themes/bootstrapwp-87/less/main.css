@@ -555,6 +555,14 @@ footer .thinner {
 #front-regulatory #regulatory-box #rb-text {
     overflow-y: scroll;
     float: left;
+    text-align: left;
+    padding: 20px 15px;
+    max-width: 70%;
+    height:520px;
+}
+
+#front-regulatory #regulatory-box #rb-text a {
+    font-size: 120%;
 }
 
 #front-contact {
@@ -670,6 +678,9 @@ footer .thinner {
     #front-regulatory #regulatory-box #rb-image {
         width: 0;
     }
+    #front-regulatory #regulatory-box #rb-text {
+        max-width: 100%;
+    }
 
     #front-services .no-pad div {
         margin: 0 auto;
@@ -762,6 +773,7 @@ footer .thinner {
     left: 10%;
     bottom: 15%;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.68);
+    text-transform: uppercase;
 }
 
 .page #after-copy {
@@ -785,7 +797,7 @@ footer .thinner {
     background-color: #6ba3d5;
 }
 
-.page-template-services-template .primary-copy {
+.page-template-services-template .primary-copy, .page-template-services-template .primary-copy a {
     line-height: 40px;
     color:#fff !important;
     font-weight: bold;
@@ -797,6 +809,38 @@ footer .thinner {
     margin-left: 0;
 }
 
+.page-template-services-template .serv-links {
+    padding-bottom: 15px;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid #fff;
+}
+
+.page-template-services-template .serv-links:last-of-type {
+    border-bottom: none !important;
+}
+
 .modal-body p {
     line-height: 26px;
+
+}
+
+@media (max-width: 991px) {
+    .page-template-services-template .first-list {
+        margin-bottom: 15px !important;
+        border-bottom: 1px solid #fff;
+    }
+
+    .page-template-services-template .first-list .serv-links:last-of-type {
+        padding-bottom: 0 !important;
+    }
+}
+
+/*Site Map styles */
+
+.page-id-45 .primary-copy li {
+    margin-bottom:10px;
+}
+
+.page-id-45 .primary-copy .sub-menu {
+    margin-top: 7px;
 }

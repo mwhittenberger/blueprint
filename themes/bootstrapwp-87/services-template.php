@@ -20,14 +20,37 @@ get_header(); ?>
 			<div class="col-md-offset-1 col-md-10 primary-copy">
 				<?php the_content();?>
 
+			<?php //figure out the count
+			$count = 0;
+			if( have_rows('services_link') ):
+			while ( have_rows('services_link') ) : the_row();
+				$count++;
+			endwhile; endif;
+
+			$half = ceil($count / 2);
+			$x = 0;
+			?>
+
+
 				<?php if( have_rows('services_link') ):
 					while ( have_rows('services_link') ) : the_row(); ?>
 
-					<a href="#<?php the_sub_field('modal_id'); ?>" data-toggle="modal"><?php the_sub_field('link_copy'); ?></a>
+					<?php if($x == 0) : ?>
+					<div class="col-md-6"><ul class="serv-list first-list">
+					<?php endif; ?>
 
-						<br>
+					<?php if($x == $half) : ?>
 
+					</ul></div>
+					<div class="col-md-6"><ul class="serv-list">
+					<?php endif; ?>
+
+					<li class="serv-links"><a href="#<?php the_sub_field('modal_id'); ?>" data-toggle="modal">
+					<?php the_sub_field('link_copy'); ?></a></li>
+					<?php $x++; ?>
 					<?php endwhile; endif; ?>
+
+				</ul></div>
 
 			</div>
 

@@ -90,7 +90,21 @@ get_header(); ?>
 
 				<div id="regulatory-box">
 					<div id="rb-image"></div>
-					<div id="rb-text"></div>
+					<div id="rb-text">
+
+						<h3>Securities Exchange Commission (SEC) - News</h3>
+						<?php echo do_shortcode("[wp-rss-aggregator source='123']"); ?>
+
+						<h3>Financial Industry Regulatory Authority (FINRA) - News</h3>
+						<?php echo do_shortcode("[wp-rss-aggregator source='155']"); ?>
+
+						<h3>U.S. Commodity Futures Trading Commission - News</h3>
+						<?php echo do_shortcode("[wp-rss-aggregator source='162']"); ?>
+
+						<h3>National Futures Association (NFA) - News</h3>
+						<?php echo do_shortcode("[wp-rss-aggregator source='169']"); ?>
+
+					</div>
 				</div>
 
 			</div> </div>

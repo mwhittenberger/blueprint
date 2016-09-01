@@ -55,6 +55,7 @@
 	</div> <!-- /container -->
 </footer>
 
+<div id="hidden-div" style="display: none;"></div>
 <?php wp_footer(); ?>
 
   </body>
