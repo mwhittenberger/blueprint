@@ -23,7 +23,7 @@ get_header(); ?>
 		<div class="triangle"></div>
 		<h2>Company</h2>
 
-		<p>Blueprint Regulatory Consulting (BRC) is a full service regulatory compliance consulting firm for the financial services industry. BRC “architects” custom compliance solutions for broker-dealers, investment advisors, private funds and commodities/futures firms. In a constantly changing regulatory environment, BRC is distinctively qualified to provide solutions that mitigate risk and are unique to the specific needs of each client. The direct regulatory compliance experience of our consultants is unparalleled in the industry.</p>
+		<?php the_content(); ?>
 
 		<a href="/our-philosophy/"><button>Learn More</button></a>
 		</div> </div>
@@ -127,7 +127,7 @@ get_header(); ?>
 
 
 
-    <?php the_content();?>
+
 
 
 <?php endwhile; // end of the loop. ?>

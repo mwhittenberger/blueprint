@@ -18,7 +18,8 @@ get_header(); ?>
 		<div class="container"><div class="row">
 
 			<div class="col-md-offset-1 col-md-10 primary-copy">
-				<?php the_content();?>
+
+				<div class="inner"><?php the_content();?></div>
 
 			<?php //figure out the count
 			$count = 0;
