@@ -14,8 +14,13 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 
-	<section id="front-video">
-		Video Will Go Here
+	<section id="front-video" class="video-container">
+		<video autoplay loop class="fillWidth"  >
+			<source src="CityClips.mp4" type="video/mp4" />
+		</video>
+		<div class="poster hidden">
+			<img src="http://www.videojs.com/img/poster.jpg" alt="">
+		</div>
 	</section>
 
 	<section id="front-company">

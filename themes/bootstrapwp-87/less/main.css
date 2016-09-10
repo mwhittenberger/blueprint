@@ -7,6 +7,11 @@ body {
     padding-top: 160px;
 }
 
+.close {
+    font-size: 40px !important;
+    line-height: .5 !important;
+}
+
 #content-wrapper {
     padding: 0;
 }
@@ -187,6 +192,8 @@ body {
 
 .dropdown-menu a {
     color:#fff !important;
+    line-height: 23px !important;
+    font-size: 15px !important;
 }
 
 .dropdown-menu a:hover {
@@ -358,6 +365,9 @@ footer {
     padding: 25px 0 60px;
 }
 
+footer .footer-divs {
+    margin-top: 32px;
+}
 
 footer, footer a, footer a:hover {
     font-size: 13px;
@@ -372,6 +382,11 @@ footer .thinner {
 #menu-footer, #footer-socials {
     list-style: none;
     margin-left: 0;
+
+}
+
+#footer-socials {
+    margin-top: 34px;
 }
 
 #menu-footer li {
@@ -391,6 +406,15 @@ footer .thinner {
 
 #footer-socials li:last-child i {
     padding: 6px 8px 5px 9px;
+}
+
+@media (max-width: 1200px) {
+    footer .footer-divs {
+        margin-top: 9px;
+    }
+    #footer-socials {
+        margin-top: 9px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -430,13 +454,43 @@ footer .thinner {
 
 /* Homepage Styles */
 
+.no-video .video-container video,
+.touch .video-container {
+    display: none;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
 #front-company {
     padding: 60px 0 40px;
     min-height: 480px;
     position: relative;
     font-size: 17px;
     text-align: center;
-    line-height: 37px;
+    line-height: 35px;
     color: #88888a;
     background: rgba(206,206,207,1);
     background: -moz-linear-gradient(top, rgba(206,206,207,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
@@ -446,6 +500,10 @@ footer .thinner {
     background: -ms-linear-gradient(top, rgba(206,206,207,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to bottom, rgba(206,206,207,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cececf', endColorstr='#ffffff', GradientType=0 );
+}
+
+#front-company .col-md-6 {
+    text-align: left;
 }
 
 #front-company .triangle, #front-services .triangle {
@@ -573,7 +631,7 @@ footer .thinner {
 }
 
 #front-regulatory {
-    min-height: 825px;
+    min-height: 990px;
     height: auto;
     background-image: url("/wp-content/themes/bootstrapwp-87/img/front-regulatory-bg.jpg");
     background-size: cover;
@@ -586,7 +644,7 @@ footer .thinner {
 
 #front-regulatory #regulatory-box {
     width:100%;
-    margin:40px auto;
+    margin:120px auto;
     border: #918f90 solid 1px;
     border-radius: 6px;
     min-height: 520px;
@@ -892,7 +950,7 @@ footer .thinner {
 }
 
 .page-template-services-template .primary-copy .inner {
-    line-height: 40px;
+    line-height: 32px;
     color:#fff !important;
     font-weight: 300;
     font-size: 19px;
@@ -912,6 +970,10 @@ footer .thinner {
 
 .page-template-services-template .serv-links:last-of-type {
     border-bottom: none !important;
+}
+
+.page-template-services-template .bottom-header {
+    margin: 40px 0 35px;
 }
 
 .modal-body p {

@@ -1,0 +1,26 @@
+[10-09-2016 18:37:07] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "https://www.nfa.futures.org/rss/newsReleasesRSS.xml". cURL error 6: Couldn't resolve host 'www.nfa.futures.org'
+
+[10-09-2016 18:37:08] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://www.cftc.gov/RSS/RSSGP/rssgp.xml". cURL error 6: Couldn't resolve host 'www.cftc.gov'
+
+[10-09-2016 18:37:09] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://feeds.finra.org/FINRANews?format=xml". cURL error 6: Couldn't resolve host 'feeds.finra.org'
+
+[10-09-2016 18:37:09] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "https://www.sec.gov/news/pressreleases.rss". cURL error 6: Couldn't resolve host 'www.sec.gov'
+
+
+[10-09-2016 19:37:20] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "https://www.nfa.futures.org/rss/newsReleasesRSS.xml". cURL error 6: Couldn't resolve host 'www.nfa.futures.org'
+
+[10-09-2016 19:37:20] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://www.cftc.gov/RSS/RSSGP/rssgp.xml". cURL error 6: Couldn't resolve host 'www.cftc.gov'
+
+[10-09-2016 19:37:20] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "http://feeds.finra.org/FINRANews?format=xml". cURL error 6: Couldn't resolve host 'feeds.finra.org'
+
+[10-09-2016 19:37:20] [Error] WPRSS > wprss_get_feed_items:
+Failed to fetch feed "https://www.sec.gov/news/pressreleases.rss". cURL error 6: Couldn't resolve host 'www.sec.gov'
+
+

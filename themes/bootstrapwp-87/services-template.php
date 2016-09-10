@@ -32,7 +32,7 @@ get_header(); ?>
 			$x = 0;
 			?>
 
-
+			<div class="row">
 				<?php if( have_rows('services_link') ):
 					while ( have_rows('services_link') ) : the_row(); ?>
 
@@ -52,6 +52,8 @@ get_header(); ?>
 					<?php endwhile; endif; ?>
 
 				</ul></div>
+
+			</div>
 
 			</div>
 
