@@ -1066,7 +1066,7 @@ footer .thinner {
 
 }
 .modal-header {
-    background: #6ba3d5;
+    background: #4891dc;
 }
 
 @media (max-width: 991px) {
@@ -1110,25 +1110,30 @@ footer .thinner {
     border: #fff solid 2px;
     padding: 5px 15px;
     border-radius: 5px;
-    margin-top: 170px;
 }
 
 .video-hero--content a, .video-hero--content a:hover {
     color: #fff;
+    top: 175px;
+    position: absolute;
+    width: 125px;
 }
 
 @media (max-width: 444px) {
     .video-hero--content button {
         margin-top: 200px;
     }
+    .video-hero--content a {
+        top: 25%;
+    }
+
 }
 
-@media (max-width: 340px) {
-    .video-hero--content button {
-        margin-top: 235px;
-        top: 20px;
-    }
+@media (max-width: 357px) {
     .video-hero--content h1 {
         font-size: 29px;
+    }
+    .video-hero--content a {
+        top: 70px;
     }
 }
