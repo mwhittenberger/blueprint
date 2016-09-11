@@ -1125,7 +1125,8 @@ footer .thinner {
 
 @media (max-width: 340px) {
     .video-hero--content button {
-        margin-top: 250px;
+        margin-top: 235px;
+        top: 20px;
     }
     .video-hero--content h1 {
         font-size: 29px;
