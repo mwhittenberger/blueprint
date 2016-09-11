@@ -41,7 +41,7 @@ body {
 /* Header Styles */
 
 .site-header {
-    border-bottom: #6ea2d5 4px solid;
+    border-bottom: #4891dc 4px solid;
     background: #fff;
 }
 
@@ -470,7 +470,7 @@ footer .thinner {
     position: relative;
     text-align: left;
     color: #FFF;
-    margin: 150px 0;
+    margin: 200px 0;
 }
 
 
@@ -490,7 +490,7 @@ footer .thinner {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    min-height: 600px;
+    min-height: 700px;
 }
 
 .jquery-background-video-pauseplay {
@@ -565,6 +565,7 @@ footer .thinner {
     position: relative;
     font-size: 17px;
     text-align: center;
+    margin-top: 5px;
     line-height: 35px;
     color: #88888a;
     background: rgba(206,206,207,1);
@@ -605,9 +606,10 @@ footer .thinner {
     font-weight: bold;
     color: #6e6b6b;
     padding-top: 7px;
-    border-radius: 0;
+    border-radius: 0 !important;
     clear: both;
     margin-top: 35px;
+    border: 1px solid #6e6b6b;
 }
 
 #front-services h2 {
@@ -957,6 +959,12 @@ footer .thinner {
     }
 }
 
+@media (max-width: 350px) {
+    #front-testimonials .kento-testimonial-author-comments {
+        font-size: 34px;
+        line-height: 55px;
+    }
+}
 /* Common Innerpage styles */
 
 .page .jumbotron {
@@ -1016,7 +1024,7 @@ footer .thinner {
 /* Services Template Styles */
 
 .page-template-services-template {
-    background-color: #6ba3d5;
+    background-color: #4891dc;
 }
 
 .page-template-services-template .primary-copy, .page-template-services-template .primary-copy a {
@@ -1088,7 +1096,7 @@ footer .thinner {
     font-weight: bold;
     position: absolute;
     line-height: 33px;
-    left: 10%;
+    left: 0;
     top: 15%;
     text-transform: uppercase;
     max-width: 400px;
@@ -1096,7 +1104,7 @@ footer .thinner {
 
 .video-hero--content button {
     position: absolute;
-    left: 10%;
+    left: 0;
     text-transform: uppercase;
     background: rgba(255, 255, 255, 0.2);
     border: #fff solid 2px;
@@ -1112,5 +1120,14 @@ footer .thinner {
 @media (max-width: 444px) {
     .video-hero--content button {
         margin-top: 200px;
+    }
+}
+
+@media (max-width: 340px) {
+    .video-hero--content button {
+        margin-top: 235px;
+    }
+    .video-hero--content h1 {
+        font-size: 29px;
     }
 }

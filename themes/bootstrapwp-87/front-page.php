@@ -14,10 +14,10 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
-		<video data-bgvideo="true" class="jquery-background-video" autoplay muted loop poster="fallback.png">
+		<video data-bgvideo="true" class="jquery-background-video" autoplay muted loop poster="fallback.jpg">
 			<source src="CityClips.mp4" type="video/mp4" />
         </video>
-		<div class="page-width">
+		<div class="container">
 			<div class="video-hero--content">
 				<h1>RegulatoRy and  compliance solutions  foR the financial  seRvices industRy.</h1>
                 <a href="/our-philosophy/"><button>Learn More</button></a>

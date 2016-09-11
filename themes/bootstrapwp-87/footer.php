@@ -14,7 +14,7 @@
 </div><!--/.container -->
 </div><!--/#content-wrapper -->
 
-<footer style="background:<?php echo (is_front_page() ? "#4f91cd" : "#88888a"); ?>">
+<footer style="background:#88888a;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 hidden-sm hidden-xs">
@@ -47,8 +47,8 @@
 			</div>
 			<div class="col-md-1 col-sm-12">
 				<ul id="footer-socials">
-					<li><a href="http://www.facebook.com/pages/Boca-Raton-FL/Blueprint-Regulatory-Consulting/105177316185809" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color: <?php echo (is_front_page() ? "#4f91cd" : "#88888a"); ?>"></i></a></li>
-					<li><a href="http://www.linkedin.com/companies/906664/Blueprint%20Regulatory%20Consulting" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color: <?php echo (is_front_page() ? "#4f91cd" : "#88888a"); ?>"></i></a></li>
+					<li><a href="http://www.facebook.com/pages/Boca-Raton-FL/Blueprint-Regulatory-Consulting/105177316185809" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color: #88888a;"></i></a></li>
+					<li><a href="http://www.linkedin.com/companies/906664/Blueprint%20Regulatory%20Consulting" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color: #88888a;"></i></a></li>
 				</ul>
 			</div>
 		</div>
