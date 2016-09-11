@@ -13,15 +13,19 @@
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-
-	<section id="front-video" class="video-container">
-		<video autoplay loop class="fillWidth"  >
+	<div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+		<video data-bgvideo="true" class="jquery-background-video" autoplay muted loop poster="fallback.png">
 			<source src="CityClips.mp4" type="video/mp4" />
-		</video>
-		<div class="poster hidden">
-			<img src="http://www.videojs.com/img/poster.jpg" alt="">
+        </video>
+		<div class="page-width">
+			<div class="video-hero--content">
+				<h1>RegulatoRy and  compliance solutions  foR the financial  seRvices industRy.</h1>
+                <a href="/our-philosophy/"><button>Learn More</button></a>
+			</div>
 		</div>
-	</section>
+	</div>
+
+
 
 	<section id="front-company">
 		<div class="container"><div class="row">

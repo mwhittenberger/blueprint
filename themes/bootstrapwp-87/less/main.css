@@ -454,6 +454,80 @@ footer .thinner {
 
 /* Homepage Styles */
 
+/* VIDEO STYLES */
+/* Video overlay and content */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none; /* Allows right click menu on the video */
+    background: url($overlay_pattern) left top repeat;
+    opacity: $overlay_opacity;
+}
+.video-hero--content {
+    position: relative;
+    text-align: left;
+    color: #FFF;
+    margin: 150px 0;
+}
+
+
+
+
+
+
+/* CSS from jQuery Background Video plugin */
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+.jquery-background-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.jquery-background-video-pauseplay {
+    display: none;
+}
+.jquery-background-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .jquery-background-video {
+    opacity: 0;
+    -webkit-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+.js .jquery-background-video.is-visible {
+    opacity: 1;
+}
+/* END VIDEO STYLES */
+
+/* old video styles
 .no-video .video-container video,
 .touch .video-container {
     display: none;
@@ -483,6 +557,7 @@ footer .thinner {
 .video-container video.fillWidth {
     width: 100%;
 }
+*/
 
 #front-company {
     padding: 60px 0 40px;
@@ -531,6 +606,8 @@ footer .thinner {
     color: #6e6b6b;
     padding-top: 7px;
     border-radius: 0;
+    clear: both;
+    margin-top: 35px;
 }
 
 #front-services h2 {
@@ -1003,4 +1080,37 @@ footer .thinner {
 
 .page-id-45 .primary-copy .sub-menu {
     margin-top: 7px;
+}
+
+/*Homepage hero styles */
+.video-hero--content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    line-height: 33px;
+    left: 10%;
+    top: 15%;
+    text-transform: uppercase;
+    max-width: 400px;
+}
+
+.video-hero--content button {
+    position: absolute;
+    left: 10%;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.2);
+    border: #fff solid 2px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 170px;
+}
+
+.video-hero--content a, .video-hero--content a:hover {
+    color: #fff;
+}
+
+@media (max-width: 444px) {
+    .video-hero--content button {
+        margin-top: 200px;
+    }
 }
