@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: 160px;
+    padding-top: 154px;
 }
 
 .close {
@@ -45,7 +45,7 @@ body {
 }
 
 .site-header {
-    border-bottom: #4891dc 4px solid;
+    border-bottom: #4891dc 3px solid;
     background: #fff;
 }
 
@@ -283,34 +283,41 @@ body {
 
 @media (max-width: 979px) {
     .dropdown-menu {
-        background-color: #fff !important;
+        background-color: #6e6b6b !important;
     }
 
     .dropdown-menu a {
-        color:#717174 !important;
+        color:#fff;
     }
 
     .dropdown-menu a:hover {
-        background-color: #fff !important;
-        color:#717174 !important;
+        background-color: #6e6b6b !important;
+        color:#fff !important;
     }
 
     .navbar .nav > li > a {
-        color: #6e6b6b;
+        color: #fff;
     }
 
     .navbar .nav > li > a:hover {
-        color: #6e6b6b;
+        color: #fff;
+    }
+
+    .nav-collapse {
+        background-color: #6e6b6b;;
     }
 
     .nav-collapse.collapse {
         overflow: hidden;
         height: 0px;
+        background-color: #6e6b6b;
     }
 
     .nav-collapse.collapse.in {
         overflow: hidden;
         height: 420px;
+        background-color: #6e6b6b;
+
     }
 
     .navbar .nav {
