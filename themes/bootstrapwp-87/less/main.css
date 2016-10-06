@@ -12,6 +12,10 @@ body {
     line-height: .5 !important;
 }
 
+.navbar-inner {
+    margin-bottom: 5px;
+}
+
 #content-wrapper {
     padding: 0;
 }
